@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fmt": "prettier --write '**/*.{js,jsx,ts,tsx,css,md,json}'"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",

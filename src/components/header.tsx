@@ -4,7 +4,7 @@ import { StarIcon as StarSolid } from "@heroicons/react/24/solid";
 
 export default function Header() {
   return (
-    <header className="flex relative justify-between items-center bg-stone-50 px-10 py-2">
+    <header className="flex relative justify-between items-center sticky top-0 bg-stone-50 px-10 py-2">
       <div className="shrink-0">
         <Link href={`/`}>
           <StarOutline className="absolute inset-x-10 inset-y-2 size-6 text-slate-600 hover:opacity-0" />

@@ -17,13 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-stone-50">
       <Head>
         <link rel="icon" href="icon.ico" sizes="any" />
       </Head>
       <body className={inter.className}>
+      <Header />
         <div className="min-h-screen bg-stone-50">
-          <Header />
           {children}
         </div>
       </body>
