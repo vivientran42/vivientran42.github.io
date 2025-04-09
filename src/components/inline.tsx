@@ -17,13 +17,15 @@ export default function Inline({
     return (
       <div className="flex items-center space-x-4">
         <StarIcon className="text-slate-600 size-4 ml-6" />
-        {text}
+        <p className="mb-2 md:mb-3"> 
+          {text}
+        </p>        
         <Image
           src={imageSrc}
           width={50}
           height={50}
           alt={imageAlt}
-          className="hover:scale-500"
+          className="hover:scale-500 hidden md:block"
           priority={true}
           placeholder="empty"
         />
@@ -32,13 +34,15 @@ export default function Inline({
   } else if (!bullet && imageSrc && imageAlt) {
     return (
       <div className="flex items-center space-x-4">
-        {text}
+        <p className="mb-2 md:mb-3"> 
+          {text}
+        </p>
         <Image
           src={imageSrc}
           width={50}
           height={50}
           alt={imageAlt}
-          className="hover:scale-500"
+          className="hover:scale-500 hidden md:block"
           priority={true}
           placeholder="empty"
         />
@@ -48,7 +52,9 @@ export default function Inline({
     return (
       <div className="flex items-center space-x-4">
         <StarIcon className="indent-2	text-slate-600 size-4 ml-6" />
-        {text}
+        <p className="mb-2 md:mb-3"> 
+          {text}
+        </p>      
       </div>
     );
   } else {

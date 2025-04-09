@@ -12,10 +12,10 @@ export default function About() {
         <link rel="preload" href="/book.jpeg" as="image" />
         <link rel="preload" href="/spotify.jpeg" as="image" />
       </Head>
-      <div className="flex min-h-screen flex-col items-start px-36 py-16 mb-12 bg-stone-50">
+      <div className="flex min-h-screen flex-col items-start px-16 md:px-36 py-16 mb-12 bg-stone-50">
         <Inline
           text={
-            <h1 className="text-slate-600 text-3xl leading-relaxed">
+            <h1 className="text-slate-600 text-xl sm:text-2xl sm:text-2xl lg:text-3xl leading-relaxed">
               Hello! I'm Vivien.{" "}
             </h1>
           }
@@ -24,13 +24,13 @@ export default function About() {
           imageAlt="Picture of the author"
         />
 
-        <h1 className="text-slate-600 text-3xl leading-relaxed">
-          A software engineer living in Melbourne/Naarm, Australia.
+        <h1 className="text-slate-600 mb-2 md:mb-3 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+          A software engineer living in London, UK from Melbourne/Naarm, Australia.
         </h1>
 
         <Inline
           text={
-            <h1 className="text-slate-600 text-3xl leading-relaxed">
+            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
               Currently working at{" "}
               <a
                 href="https://www.anz.com.au/plus/"
@@ -55,22 +55,21 @@ export default function About() {
           imageAlt="Picture of the author"
         />
 
-        <br></br>
-        <br></br>
+        <div className="mt-5 md:mt-8"></div>
 
-        <h1 className="text-slate-600 text-3xl leading-relaxed">
-          I love problem solving and working on products that I care about.
+        <h1 className="text-slate-600 mb-2 md:mb-3 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+          I love problem solving, exercising creativity, and working on products that I care about.
         </h1>
 
-        <br></br>
-        <br></br>
+        <div className="mt-5 md:mt-8"></div>
 
-        <h1 className="text-slate-600 text-3xl leading-relaxed">
+        <h1 className="text-slate-600 mb-2 md:mb-3 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
           Some other things I enjoy:
         </h1>
+
         <Inline
           text={
-            <h1 className="text-slate-600 text-3xl leading-relaxed">
+            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
               <a
                 href={`/designing`}
                 className="hover:text-pink-400 hover:underline decoration-wavy transition duration-150"
@@ -81,29 +80,41 @@ export default function About() {
           }
           bullet={true}
         />
+
         <Inline
           text={
-            <h1 className="text-slate-600 text-3xl leading-relaxed">
-              Ice cream{" "}
+            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+              Eating ice cream{" "}
             </h1>
           }
           bullet={true}
           imageSrc="/icecream.jpg"
           imageAlt="Picture of the author"
         />
+
         <Inline
           text={
-            <h1 className="text-slate-600 text-3xl leading-relaxed">
-              Architecture / interior design{" "}
+            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+              Architecture{" "}
             </h1>
           }
           bullet={true}
-          imageSrc="/ciudad.jpg"
-          imageAlt="Picture of the author"
         />
+
         <Inline
           text={
-            <h1 className="text-slate-600 text-3xl leading-relaxed">
+            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+              Listening to music all day{" "}
+            </h1>
+          }
+          bullet={true}
+          imageSrc="/spotify.jpg"
+          imageAlt="Picture of the author"
+        />  
+
+        <Inline
+          text={
+            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
               Reading{" "}
             </h1>
           }
@@ -111,29 +122,25 @@ export default function About() {
           imageSrc="/book.jpg"
           imageAlt="Picture of the author"
         />
+
         <Inline
           text={
-            <h1 className="text-slate-600 text-3xl leading-relaxed">
-              <a
-                href="https://letterboxd.com/nizainali/list/slice-of-life/"
-                target="_blank"
-                className="hover:text-pink-400 hover:underline decoration-wavy transition duration-150"
-              >
-                Slice of life movies
-              </a>
+            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+              Interior design{" "}
             </h1>
           }
           bullet={true}
-        />
-        <Inline
-          text={
-            <h1 className="text-slate-600 text-3xl leading-relaxed">
-              Listening to music all day{" "}
-            </h1>
-          }
-          bullet={true}
-          imageSrc="/spotify.jpg"
+          imageSrc="/ciudad.jpg"
           imageAlt="Picture of the author"
+        />   
+
+        <Inline
+          text={
+            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+              Watching movies
+            </h1>
+          }
+          bullet={true}
         />
       </div>
     </div>
