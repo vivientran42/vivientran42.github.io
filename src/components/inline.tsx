@@ -18,9 +18,7 @@ export default function Inline({
     return (
       <div className="flex items-center space-x-4">
         <StarIcon className="text-slate-600 size-4 ml-6" />
-        <h1 className="mb-2 md:mb-3"> 
           {text}
-        </h1>        
         <Image
           src={imageSrc}
           width={50}
@@ -35,9 +33,7 @@ export default function Inline({
   } else if (!bullet && imageSrc && imageAlt) {
     return (
       <div className="flex items-center space-x-4">
-        <h1 className="mb-2 md:mb-3"> 
           {text}
-        </h1>
         <Image
           src={imageSrc}
           width={50}
@@ -53,9 +49,7 @@ export default function Inline({
     return (
       <div className="flex items-center space-x-4">
         <StarIcon className="indent-2	text-slate-600 size-4 ml-6" />
-        <h1 className="mb-2 md:mb-3"> 
           {text}
-        </h1>      
       </div>
     );
   } else {

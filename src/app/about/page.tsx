@@ -15,7 +15,7 @@ export default function About() {
       <div className="flex min-h-screen flex-col items-start px-16 md:px-36 py-16 mb-12 bg-stone-50">
         <Inline
           text={
-            <h1 className="text-slate-600 text-xl sm:text-2xl sm:text-2xl lg:text-3xl leading-relaxed">
+            <h1 className="text-slate-600 mb-2 md:mb-3 text-xl sm:text-2xl sm:text-2xl lg:text-3xl leading-relaxed">
               Hello! I'm Vivien.{" "}
             </h1>
           }
@@ -30,7 +30,7 @@ export default function About() {
 
         <Inline
           text={
-            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+            <h1 className="text-slate-600 mb-2 md:mb-3 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
               Currently working at{" "}
               <a
                 href="https://www.anz.com.au/plus/"
@@ -69,7 +69,7 @@ export default function About() {
 
         <Inline
           text={
-            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+            <h1 className="text-slate-600 mb-2 md:mb-3 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
               <a
                 href={`/designing`}
                 className="hover:text-pink-400 hover:underline decoration-wavy transition duration-150"
@@ -83,7 +83,7 @@ export default function About() {
 
         <Inline
           text={
-            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+            <h1 className="text-slate-600 mb-2 md:mb-3 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
               Eating ice cream{" "}
             </h1>
           }
@@ -94,7 +94,7 @@ export default function About() {
 
         <Inline
           text={
-            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+            <h1 className="text-slate-600 mb-2 md:mb-3 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
               Bodies of water{" "}
             </h1>
           }
@@ -103,7 +103,7 @@ export default function About() {
 
         <Inline
           text={
-            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+            <h1 className="text-slate-600 mb-2 md:mb-3 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
               Listening to music all day{" "}
             </h1>
           }
@@ -114,7 +114,7 @@ export default function About() {
 
         <Inline
           text={
-            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+            <h1 className="text-slate-600 mb-2 md:mb-3 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
               Reading{" "}
             </h1>
           }
@@ -125,7 +125,7 @@ export default function About() {
 
         <Inline
           text={
-            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+            <h1 className="text-slate-600 mb-2 md:mb-3 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
               Architecture{" "}
             </h1>
           }
@@ -136,7 +136,7 @@ export default function About() {
 
         <Inline
           text={
-            <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+            <h1 className="text-slate-600 mb-2 md:mb-3 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
               Watching movies
             </h1>
           }
