@@ -21,7 +21,7 @@ export default function About() {
           }
           bullet={false}
           imageSrc="/me.jpg"
-          imageAlt="Picture of the author"
+          imageAlt="Picture of me (Vivien Tran)."
         />
 
         <h1 className="text-slate-600 mb-2 md:mb-3 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
@@ -52,7 +52,7 @@ export default function About() {
           }
           bullet={false}
           imageSrc="/laptop.jpg"
-          imageAlt="Picture of the author"
+          imageAlt="Picture of a laptop and lanyard on grass."
         />
 
         <div className="mt-5 md:mt-8"></div>
@@ -89,7 +89,7 @@ export default function About() {
           }
           bullet={true}
           imageSrc="/icecream.jpg"
-          imageAlt="Picture of the author"
+          imageAlt="Picture of two ice cream scoops."
         />
 
         <Inline
@@ -109,7 +109,7 @@ export default function About() {
           }
           bullet={true}
           imageSrc="/spotify.jpg"
-          imageAlt="Picture of the author"
+          imageAlt="Screenshot of Spotify Wrapped."
         />  
 
         <Inline
@@ -120,7 +120,7 @@ export default function About() {
           }
           bullet={true}
           imageSrc="/books.jpg"
-          imageAlt="Picture of the author"
+          imageAlt="Picture of some books."
         />
 
         <Inline
@@ -131,7 +131,7 @@ export default function About() {
           }
           bullet={true}
           imageSrc="/architecture.jpg"
-          imageAlt="Picture of the author"
+          imageAlt="Picture of a brutalist building."
         />   
 
         <Inline
