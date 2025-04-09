@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ReactNode } from "react";
 import { StarIcon } from "@heroicons/react/24/solid";
+import { H1Icon } from "@heroicons/react/24/outline";
 
 export default function Inline({
   text,
@@ -17,9 +18,9 @@ export default function Inline({
     return (
       <div className="flex items-center space-x-4">
         <StarIcon className="text-slate-600 size-4 ml-6" />
-        <p className="mb-2 md:mb-3"> 
+        <h1 className="mb-2 md:mb-3"> 
           {text}
-        </p>        
+        </h1>        
         <Image
           src={imageSrc}
           width={50}
@@ -34,9 +35,9 @@ export default function Inline({
   } else if (!bullet && imageSrc && imageAlt) {
     return (
       <div className="flex items-center space-x-4">
-        <p className="mb-2 md:mb-3"> 
+        <h1 className="mb-2 md:mb-3"> 
           {text}
-        </p>
+        </h1>
         <Image
           src={imageSrc}
           width={50}
@@ -52,9 +53,9 @@ export default function Inline({
     return (
       <div className="flex items-center space-x-4">
         <StarIcon className="indent-2	text-slate-600 size-4 ml-6" />
-        <p className="mb-2 md:mb-3"> 
+        <h1 className="mb-2 md:mb-3"> 
           {text}
-        </p>      
+        </h1>      
       </div>
     );
   } else {
