@@ -95,7 +95,7 @@ export default function About() {
         <Inline
           text={
             <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
-              Architecture{" "}
+              Bodies of water{" "}
             </h1>
           }
           bullet={true}
@@ -119,18 +119,18 @@ export default function About() {
             </h1>
           }
           bullet={true}
-          imageSrc="/book.jpg"
+          imageSrc="/books.jpg"
           imageAlt="Picture of the author"
         />
 
         <Inline
           text={
             <h1 className="text-slate-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
-              Interior design{" "}
+              Architecture{" "}
             </h1>
           }
           bullet={true}
-          imageSrc="/ciudad.jpg"
+          imageSrc="/architecture.jpg"
           imageAlt="Picture of the author"
         />   
 
