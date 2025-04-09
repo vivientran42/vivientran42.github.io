@@ -19,18 +19,6 @@ export default function Header() {
           MORE?
         </Link>
         <Link
-          href={`/coding`}
-          className="text-right text-lg text-slate-600 hover:text-pink-400 hover:underline decoration-wavy transition duration-150"
-        >
-          CODE
-        </Link>
-        <Link
-          href={`/designing`}
-          className="text-right text-lg text-slate-600 hover:text-pink-400 hover:underline decoration-wavy transition duration-150"
-        >
-          DESIGN
-        </Link>
-        <Link
           href={"mailto:vivitr9@gmail.com"}
           className="text-right text-lg text-slate-600 hover:text-pink-400 hover:underline decoration-wavy transition duration-150"
         >
