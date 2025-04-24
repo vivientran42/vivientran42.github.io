@@ -6,7 +6,7 @@ const parissienne = Parisienne({ weight: ["400"], subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="flex flex-col grid grid-cols-12 items-center px-24 py-32 bg-stone-50 bg-gradient-radial">
+    <main className="flex flex-col grid grid-cols-12 items-center px-12 sm:px-24 py-32 bg-stone-50 bg-gradient-radial">
       <div className="col-start-1	col-span-12 lg:col-start-2 lg:col-span-6	">
         <h1
           className={`${tangerine.className} text-left text-4xl sm:text-5xl text-slate-600 object-bottom	`}
@@ -14,7 +14,7 @@ export default function Home() {
           {" "}
           <span className="relative">
             <span
-              className={`${parissienne.className} text-left text-[30px] sm:text-[36px] text-slate-600`}
+              className={`${parissienne.className} text-left text-[25px] sm:text-[36px] text-slate-600`}
             >
               E
             </span>
