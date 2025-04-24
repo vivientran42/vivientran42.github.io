@@ -35,7 +35,7 @@ export default function About() {
               <a
                 href="https://www.anz.com.au/plus/"
                 target="_blank"
-                className="hover:text-pink-400 hover:underline decoration-wavy transition duration-150"
+                className="hover:text-pink-400 hover:underline decoration-wavy active:text-pink-400 active:underline decoration-wavy transition duration-150"
               >
                 ANZ Plus
               </a>{" "}
@@ -43,7 +43,7 @@ export default function About() {
               <a
                 href="https://www.anz.com.au/plus/benefits/add-ons/"
                 target="_blank"
-                className="hover:text-pink-400 hover:underline decoration-wavy transition duration-150"
+                className="hover:text-pink-400 hover:underline decoration-wavy active:text-pink-400 active:underline decoration-wavy transition duration-150"
               >
                 Add-Ons feature
               </a>
@@ -99,7 +99,7 @@ export default function About() {
         <Inline
           text={
             <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
-              Listening to music all day{" "}
+              Listening to music{" "}
             </h1>
           }
           bullet={true}
