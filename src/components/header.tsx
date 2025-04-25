@@ -14,13 +14,13 @@ export default function Header() {
       <div className="justify-end space-x-10">
         <Link
           href={`/about`}
-          className="text-right text-lg text-slate-600 hover:text-pink-400 hover:underline decoration-wavy transition duration-150"
+          className="text-right text-lg text-slate-600 hover:text-pink-500 hover:underline decoration-wavy transition duration-150"
         >
           MORE?
         </Link>
         <Link
           href={"mailto:vivitr9@gmail.com"}
-          className="text-right text-lg text-slate-600 hover:text-pink-400 hover:underline decoration-wavy transition duration-150"
+          className="text-right text-lg text-slate-600 hover:text-pink-500 hover:underline decoration-wavy transition duration-150"
         >
           EMAIL
         </Link>

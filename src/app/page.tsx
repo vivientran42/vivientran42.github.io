@@ -22,7 +22,7 @@ export default function Home() {
           verything you need to know about
         </h1>
         <div className="grid sm:grid-cols-2 gap-x-2 min-w-min border border-slate-600 p-10">
-          <h1 className="sm:col-span-2 font-semibold text-left text-4xl sm:text-6xl md:text-7xl xl:text-8xl text-slate-600 mb-2 hover:text-yellow-300 active:text-yellow-300 transition duration-500">
+          <h1 className="sm:col-span-2 font-semibold text-left text-4xl sm:text-6xl md:text-7xl xl:text-8xl text-slate-600 mb-2 hover:text-yellow-400 active:text-pink-500 transition duration-500">
             Vivien Tran
           </h1>
           <h1 className="sm:col-span-1 font-mono text-left text-sm xl:text-base text-slate-600 mb-1">
@@ -36,7 +36,7 @@ export default function Home() {
             <a
               href="https://www.linkedin.com/in/vivientran42/"
               target="_blank"
-              className="hover:text-pink-400 hover:underline decoration-wavy active:text-pink-400 active:underline decoration-wavy transition duration-150"
+              className="hover:text-pink-500 hover:underline decoration-wavy active:text-pink-500 active:underline decoration-wavy transition duration-150"
             >
               vivientran42
             </a>
@@ -46,7 +46,7 @@ export default function Home() {
             <a
               href="https://github.com/vivientran42"
               target="_blank"
-              className="hover:text-pink-400 hover:underline decoration-wavy active:text-pink-400 active:underline decoration-wavy transition duration-150"
+              className="hover:text-pink-500 hover:underline decoration-wavy active:text-pink-500 active:underline decoration-wavy transition duration-150"
             >
               vivientran42
             </a>

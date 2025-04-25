@@ -35,7 +35,7 @@ export default function About() {
               <a
                 href="https://www.anz.com.au/plus/"
                 target="_blank"
-                className="hover:text-pink-400 hover:underline decoration-wavy active:text-pink-400 active:underline decoration-wavy transition duration-150"
+                className="hover:text-pink-500 hover:underline decoration-wavy active:text-pink-500 active:underline decoration-wavy transition duration-150"
               >
                 ANZ Plus
               </a>{" "}
@@ -43,7 +43,7 @@ export default function About() {
               <a
                 href="https://www.anz.com.au/plus/benefits/add-ons/"
                 target="_blank"
-                className="hover:text-pink-400 hover:underline decoration-wavy active:text-pink-400 active:underline decoration-wavy transition duration-150"
+                className="hover:text-pink-500 hover:underline decoration-wavy active:text-pink-500 active:underline decoration-wavy transition duration-150"
               >
                 Add-Ons feature
               </a>
