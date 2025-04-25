@@ -25,7 +25,8 @@ export default function About() {
         />
 
         <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
-          A software engineer living in London, UK from Melbourne/Naarm, Australia.
+          A software engineer living in London, UK from Melbourne/Naarm,
+          Australia.
         </h1>
 
         <Inline
@@ -58,7 +59,8 @@ export default function About() {
         <div className="mt-5 md:mt-8"></div>
 
         <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
-          I love problem solving, exercising creativity, and working on products that I care about.
+          I love problem solving, exercising creativity, and working on products
+          that I care about.
         </h1>
 
         <div className="mt-5 md:mt-8"></div>
@@ -70,7 +72,7 @@ export default function About() {
         <Inline
           text={
             <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
-                Graphic design
+              Graphic design
             </h1>
           }
           bullet={true}
@@ -105,7 +107,7 @@ export default function About() {
           bullet={true}
           imageSrc="/spotify.jpg"
           imageAlt="Screenshot of Spotify Wrapped."
-        /> 
+        />
 
         <Inline
           text={
@@ -116,7 +118,7 @@ export default function About() {
           bullet={true}
           imageSrc="/architecture.jpg"
           imageAlt="Picture of a brutalist building."
-        />            
+        />
 
         <Inline
           text={
@@ -127,7 +129,7 @@ export default function About() {
           bullet={true}
           imageSrc="/books.jpg"
           imageAlt="Picture of some books."
-        /> 
+        />
       </div>
     </div>
   );

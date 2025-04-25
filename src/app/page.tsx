@@ -32,7 +32,7 @@ export default function Home() {
             Home: London, UK
           </h1>
           <h1 className="sm:col-span-1 font-mono text-left text-sm xl:text-base text-slate-600 mb-1">
-            LinkedIn: {" "}
+            LinkedIn:{" "}
             <a
               href="https://www.linkedin.com/in/vivientran42/"
               target="_blank"
@@ -42,7 +42,7 @@ export default function Home() {
             </a>
           </h1>
           <h1 className="col-span-1 font-mono text-left text-sm xl:text-base text-slate-600 mb-1">
-            GitHub: {" "}
+            GitHub:{" "}
             <a
               href="https://github.com/vivientran42"
               target="_blank"

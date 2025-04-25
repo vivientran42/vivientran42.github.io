@@ -22,10 +22,8 @@ export default function RootLayout({
         <link rel="icon" href="icon.ico" sizes="any" />
       </Head>
       <body className={inter.className}>
-      <Header />
-        <div className="min-h-screen bg-stone-50">
-          {children}
-        </div>
+        <Header />
+        <div className="min-h-screen bg-stone-50">{children}</div>
       </body>
     </html>
   );
