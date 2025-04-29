@@ -1,8 +1,6 @@
-Personal website - visit at [vivientran42.github.io/](https://vivientran42.github.io/).
+Personal website built with [Next.js](https://nextjs.org/) and bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) — visit at [vivientran42.github.io/](https://vivientran42.github.io/).
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
+## Run locally
 
 First, run the development server:
 
