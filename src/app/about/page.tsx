@@ -91,7 +91,7 @@ export default function About() {
                 bulletSize="small"
               />
               <Inline
-                text={<p>Risk management</p>}
+                text={<p>Project management</p>}
                 bullet={true}
                 bulletSize="small"
               />
@@ -137,7 +137,7 @@ export default function About() {
         <Inline
           text={
             <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
-              Architecture/interior design{" "}
+              Architecture{" "}
             </h1>
           }
           bullet={true}
