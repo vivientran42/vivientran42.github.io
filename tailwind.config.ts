@@ -14,7 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       scale: {
-        "500": "5", // Custom scale for 500%
+        "550": "5.5",
       },
     },
   },

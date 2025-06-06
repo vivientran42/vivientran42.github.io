@@ -1,7 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import Head from "next/head";
 import Inline from "@/components/inline";
 
 export default function About() {
+  const [showExpand, setShowExpand] = useState(false);
+
   return (
     <div className="bg-stone-50">
       <Head>
@@ -28,6 +33,8 @@ export default function About() {
           A software engineer living in London, UK from Melbourne/Naarm,
           Australia.
         </h1>
+
+        <div className="mt-5 md:mt-8"></div>
 
         <Inline
           text={
@@ -59,6 +66,44 @@ export default function About() {
         <div className="mt-5 md:mt-8"></div>
 
         <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+          Shaped by a varied background (
+          {!showExpand && (
+            <button
+              className="px-2 rounded-lg bg-yellow-200 hover:bg-yellow-100 text-slate-600 text-sm lg:text-lg align-middle transition duration-150"
+              onClick={() => setShowExpand(!showExpand)}
+            >
+              EXPAND ME!
+            </button>
+          )}
+          {showExpand && (
+            <button
+              className="inline-block pr-4 py-2 text-sm sm:text-base lg:text-lg text-left align-middle transition duration-150"
+              onClick={() => setShowExpand(!showExpand)}
+            >
+              <Inline
+                text={<p>Systems analysis</p>}
+                bullet={true}
+                bulletSize="small"
+              />
+              <Inline
+                text={<p>Executive reporting</p>}
+                bullet={true}
+                bulletSize="small"
+              />
+              <Inline
+                text={<p>Risk management</p>}
+                bullet={true}
+                bulletSize="small"
+              />
+            </button>
+          )}
+          ), I bring an engineering mindset paired with a deep awareness of
+          business operations.
+        </h1>
+
+        <div className="mt-5 md:mt-8"></div>
+
+        <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
           I love problem solving, exercising creativity, and working on products
           that I care about.
         </h1>
@@ -81,12 +126,23 @@ export default function About() {
         <Inline
           text={
             <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
-              Eating ice cream{" "}
+              Ice cream{" "}
             </h1>
           }
           bullet={true}
           imageSrc="/icecream.jpg"
           imageAlt="Picture of two ice cream scoops."
+        />
+
+        <Inline
+          text={
+            <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+              Architecture/interior design{" "}
+            </h1>
+          }
+          bullet={true}
+          imageSrc="/architecture.jpg"
+          imageAlt="Picture of a brutalist building."
         />
 
         <Inline
@@ -107,17 +163,6 @@ export default function About() {
           bullet={true}
           imageSrc="/spotify.jpg"
           imageAlt="Screenshot of Spotify Wrapped."
-        />
-
-        <Inline
-          text={
-            <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
-              Architecture{" "}
-            </h1>
-          }
-          bullet={true}
-          imageSrc="/architecture.jpg"
-          imageAlt="Picture of a brutalist building."
         />
 
         <Inline
