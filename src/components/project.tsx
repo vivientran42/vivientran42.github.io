@@ -1,11 +1,11 @@
 export default function Project({
   heading,
   description,
-  tech,
+  footnote,
 }: {
   heading: string;
   description: string;
-  tech: string;
+  footnote: string;
 }) {
   return (
     <div className="w-full h-full col-span-1 border border-slate-600 p-10 items-center hover:bg-white hover:bg-opacity-25 hover:shadow-lg">
@@ -16,7 +16,7 @@ export default function Project({
         {description}
       </h1>
       <h1 className="text-slate-600 text-left text-xs leading-relaxed">
-        {tech}
+        {footnote}
       </h1>
     </div>
   );
