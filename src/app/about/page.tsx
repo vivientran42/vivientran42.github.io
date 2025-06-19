@@ -3,9 +3,13 @@
 import { useState } from "react";
 import Head from "next/head";
 import Inline from "@/components/inline";
+import Modal from "@/components/modal";
 
 export default function About() {
-  const [showExpand, setShowExpand] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => setIsOpen(true);
+  const handleClose = () => setIsOpen(false);
 
   return (
     <div className="bg-stone-50">
@@ -66,40 +70,59 @@ export default function About() {
         <div className="mt-5 md:mt-8"></div>
 
         <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
-          Shaped by a varied background (
-          {!showExpand && (
-            <button
-              className="px-2 rounded-lg bg-yellow-200 hover:bg-yellow-100 text-slate-600 text-sm lg:text-lg align-middle transition duration-150"
-              onClick={() => setShowExpand(!showExpand)}
-            >
-              EXPAND ME!
-            </button>
-          )}
-          {showExpand && (
-            <button
-              className="inline-block pr-4 py-2 text-sm sm:text-base lg:text-lg text-left align-middle transition duration-150"
-              onClick={() => setShowExpand(!showExpand)}
-            >
-              <Inline
-                text={<p>Systems analysis</p>}
-                bullet={true}
-                bulletSize="small"
-              />
-              <Inline
-                text={<p>Executive reporting</p>}
-                bullet={true}
-                bulletSize="small"
-              />
-              <Inline
-                text={<p>Project management</p>}
-                bullet={true}
-                bulletSize="small"
-              />
-            </button>
-          )}
-          ), I bring an engineering mindset paired with a deep awareness of
-          business operations.
+          Shaped by a diverse background (
+          <button
+            className="px-2 rounded-lg bg-slate-100 hover:bg-yellow-100 hover:scale-105 text-slate-600 text-sm lg:text-lg align-middle transition duration-150"
+            onClick={handleOpen}
+          >
+            MORE?
+          </button>
+          ), I bring an engineering mindset paired with a deep awareness of how
+          businesses operate.
         </h1>
+
+        {isOpen && (
+          <Modal
+            isOpen={isOpen}
+            onClose={handleClose}
+            children={
+              <div>
+                <Inline
+                  text={
+                    <p className="text-lg text-slate-600 mb-1">Gathering requirements for Salesforce features</p>
+                  }
+                  bullet={true}
+                  bulletSize="small"
+                />
+                <Inline
+                  text={
+                    <p className="text-lg text-slate-600 mb-1">Coordinating regulatory engagements</p>
+                  }
+                  bullet={true}
+                  bulletSize="small"
+                />
+                 <Inline
+                  text={
+                    <p className="text-lg text-slate-600 mb-1">
+                      Executive reporting on tech risk
+                    </p>
+                  }
+                  bullet={true}
+                  bulletSize="small"
+                />
+                        <Inline
+                  text={
+                    <p className="text-lg text-slate-600">
+                      Strategising intern recruitment and onboarding
+                    </p>
+                  }
+                  bullet={true}
+                  bulletSize="small"
+                />
+              </div>
+            }
+          />
+        )}
 
         <div className="mt-5 md:mt-8"></div>
 
@@ -117,7 +140,7 @@ export default function About() {
         <Inline
           text={
             <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
-              Graphic design
+              Design
             </h1>
           }
           bullet={true}
@@ -137,21 +160,21 @@ export default function About() {
         <Inline
           text={
             <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
+              Watching movies
+            </h1>
+          }
+          bullet={true}
+        />
+
+        <Inline
+          text={
+            <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
               Architecture{" "}
             </h1>
           }
           bullet={true}
           imageSrc="/architecture.jpg"
           imageAlt="Picture of a brutalist building."
-        />
-
-        <Inline
-          text={
-            <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
-              Watching movies
-            </h1>
-          }
-          bullet={true}
         />
 
         <Inline
