@@ -89,30 +89,34 @@ export default function About() {
               <div>
                 <Inline
                   text={
-                    <p className="text-lg text-slate-600 mb-1">Gathered requirements for Salesforce features</p>
+                    <p className="text-sm sm:text-lg text-slate-600 mb-1">
+                      Gathered requirements for Salesforce features
+                    </p>
                   }
                   bullet={true}
                   bulletSize="small"
                 />
                 <Inline
                   text={
-                    <p className="text-lg text-slate-600 mb-1">Coordinated regulatory engagements</p>
+                    <p className="text-sm sm:text-lg text-slate-600 mb-1">
+                      Coordinated regulatory engagements
+                    </p>
                   }
                   bullet={true}
                   bulletSize="small"
                 />
-                 <Inline
+                <Inline
                   text={
-                    <p className="text-lg text-slate-600 mb-1">
+                    <p className="text-sm sm:text-lg text-slate-600 mb-1">
                       Delivered executive reporting on tech risk
                     </p>
                   }
                   bullet={true}
                   bulletSize="small"
                 />
-                        <Inline
+                <Inline
                   text={
-                    <p className="text-lg text-slate-600">
+                    <p className="text-sm sm:text-lg text-slate-600">
                       Strategised intern recruitment and onboarding
                     </p>
                   }
