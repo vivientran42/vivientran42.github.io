@@ -89,14 +89,14 @@ export default function About() {
               <div>
                 <Inline
                   text={
-                    <p className="text-lg text-slate-600 mb-1">Gathering requirements for Salesforce features</p>
+                    <p className="text-lg text-slate-600 mb-1">Gathered requirements for Salesforce features</p>
                   }
                   bullet={true}
                   bulletSize="small"
                 />
                 <Inline
                   text={
-                    <p className="text-lg text-slate-600 mb-1">Coordinating regulatory engagements</p>
+                    <p className="text-lg text-slate-600 mb-1">Coordinated regulatory engagements</p>
                   }
                   bullet={true}
                   bulletSize="small"
@@ -104,7 +104,7 @@ export default function About() {
                  <Inline
                   text={
                     <p className="text-lg text-slate-600 mb-1">
-                      Executive reporting on tech risk
+                      Delivered executive reporting on tech risk
                     </p>
                   }
                   bullet={true}
@@ -113,7 +113,7 @@ export default function About() {
                         <Inline
                   text={
                     <p className="text-lg text-slate-600">
-                      Strategising intern recruitment and onboarding
+                      Strategised intern recruitment and onboarding
                     </p>
                   }
                   bullet={true}
