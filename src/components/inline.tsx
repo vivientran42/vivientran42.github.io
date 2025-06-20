@@ -56,7 +56,7 @@ export default function Inline({
   } else if (bullet && bulletSize == "small" && !imageSrc && !imageAlt) {
     return (
       <div className="flex items-center space-x-4">
-        <StarIcon className="flex-shrink-0 indent-2	text-slate-600 size-2 md:size-3 ml-4 mb-1 mt-1" />
+        <StarIcon className="shrink-0 indent-2	text-slate-600 size-2 md:size-3 ml-4 mb-1 mt-1" />
         {text}
       </div>
     );
