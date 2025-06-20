@@ -21,7 +21,7 @@ export default function About() {
         <link rel="preload" href="/book.jpeg" as="image" />
         <link rel="preload" href="/spotify.jpeg" as="image" />
       </Head>
-      <div className="flex min-h-screen flex-col items-start px-16 md:px-36 py-16 mb-12 bg-stone-50">
+      <div className="flex min-h-screen flex-col items-start px-16 md:px-36 lg:px-48 xl:px-[400px] py-16 mb-12 bg-stone-50">
         <Inline
           text={
             <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl sm:text-2xl lg:text-3xl leading-relaxed">
@@ -87,10 +87,13 @@ export default function About() {
             onClose={handleClose}
             children={
               <div>
+                <h1 className="text-slate-600 mb-2 text-sm sm:text-lg leading-relaxed">
+                  PAST EXPERIENCE IN:
+                </h1>
                 <Inline
                   text={
                     <p className="text-sm sm:text-lg text-slate-600 mb-1">
-                      Gathered requirements for Salesforce features
+                      Gathering requirements for Salesforce features
                     </p>
                   }
                   bullet={true}
@@ -99,7 +102,7 @@ export default function About() {
                 <Inline
                   text={
                     <p className="text-sm sm:text-lg text-slate-600 mb-1">
-                      Coordinated regulatory engagements
+                      Coordinating regulatory engagements
                     </p>
                   }
                   bullet={true}
@@ -108,7 +111,7 @@ export default function About() {
                 <Inline
                   text={
                     <p className="text-sm sm:text-lg text-slate-600 mb-1">
-                      Delivered executive reporting on tech risk
+                      Executive reporting on tech risk
                     </p>
                   }
                   bullet={true}
@@ -117,7 +120,7 @@ export default function About() {
                 <Inline
                   text={
                     <p className="text-sm sm:text-lg text-slate-600">
-                      Strategised intern recruitment and onboarding
+                      Strategising intern recruitment and onboarding
                     </p>
                   }
                   bullet={true}
