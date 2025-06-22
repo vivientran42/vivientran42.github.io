@@ -93,7 +93,7 @@ export default function About() {
                 <Inline
                   text={
                     <p className="text-sm sm:text-lg text-slate-600 mb-1">
-                      Gathering requirements for Salesforce features
+                      Requirements gathering for Salesforce features
                     </p>
                   }
                   bullet={true}
