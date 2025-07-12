@@ -9,7 +9,7 @@ export default function Home() {
     <main className="flex flex-col grid grid-cols-12 items-center px-12 sm:px-24 py-32 bg-stone-50 bg-gradient-radial">
       <div className="col-start-1	col-span-12 lg:col-start-2 lg:col-span-6	">
         <h1
-          className={`${tangerine.className} text-left text-4xl sm:text-5xl text-slate-600 object-bottom	`}
+          className={`${tangerine.className} text-left text-4xl sm:text-5xl text-slate-600 object-bottom`}
         >
           {" "}
           <span className="relative">

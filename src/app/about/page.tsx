@@ -6,10 +6,13 @@ import Inline from "@/components/inline";
 import Modal from "@/components/modal";
 
 export default function About() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [nonTechOpen, setNonTechOpen] = useState(false);
+  const handleNonTechOpen = () => setNonTechOpen(true);
+  const handleNonTechClose = () => setNonTechOpen(false);
 
-  const handleOpen = () => setIsOpen(true);
-  const handleClose = () => setIsOpen(false);
+  const [techOpen, setTechOpen] = useState(false);
+  const handleTechOpen = () => setTechOpen(true);
+  const handleTechClose = () => setTechOpen(false);
 
   return (
     <div className="bg-stone-50">
@@ -21,7 +24,7 @@ export default function About() {
         <link rel="preload" href="/book.jpeg" as="image" />
         <link rel="preload" href="/spotify.jpeg" as="image" />
       </Head>
-      <div className="flex min-h-screen flex-col items-start px-16 md:px-36 lg:px-48 xl:px-[400px] py-16 mb-12 bg-stone-50">
+      <div className="flex min-h-screen flex-col items-start px-16 lg:px-36 py-16 mb-12 bg-stone-50">
         <Inline
           text={
             <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl sm:text-2xl lg:text-3xl leading-relaxed">
@@ -57,15 +60,64 @@ export default function About() {
                 target="_blank"
                 className="hover:text-pink-500 hover:underline decoration-wavy active:text-pink-500 active:underline decoration-wavy transition duration-150"
               >
-                Add-Ons feature
+                Add-Ons feature (
               </a>
-              .
+              <button
+                className="px-2 rounded-lg bg-slate-100 hover:bg-yellow-100 hover:scale-105 text-slate-600 text-sm lg:text-lg align-middle transition duration-150"
+                onClick={handleTechOpen}
+              >
+                MORE?
+              </button>
+              ).
             </h1>
           }
           bullet={false}
           imageSrc="/laptop.jpg"
           imageAlt="Picture of a laptop and lanyard on grass."
         />
+        <div>
+          {techOpen && (
+            <Modal
+              isOpen={techOpen}
+              onClose={handleTechClose}
+              children={
+                <div>
+                  <h1 className="text-slate-600 mb-2 text-sm sm:text-lg leading-relaxed">
+                    Working in a primarily backend team with the occasional
+                    frontend task.
+                  </h1>
+                  <Inline
+                    text={
+                      <p className="text-sm sm:text-lg text-slate-600 mb-1">
+                        Backend: Go, gRPC
+                      </p>
+                    }
+                    bullet={true}
+                    bulletSize="small"
+                  />
+                  <Inline
+                    text={
+                      <p className="text-sm sm:text-lg text-slate-600 mb-1">
+                        Frontend: React, Next.js, TypeScript, Tailwind CSS
+                      </p>
+                    }
+                    bullet={true}
+                    bulletSize="small"
+                  />
+                  <Inline
+                    text={
+                      <p className="text-sm sm:text-lg text-slate-600 mb-1">
+                        Platform: GCP, GitHub Actions, Docker
+                      </p>
+                    }
+                    bullet={true}
+                    bulletSize="small"
+                  />
+                </div>
+              }
+            />
+          )}
+        </div>
 
         <div className="mt-5 md:mt-8"></div>
 
@@ -73,7 +125,7 @@ export default function About() {
           Shaped by a diverse background (
           <button
             className="px-2 rounded-lg bg-slate-100 hover:bg-yellow-100 hover:scale-105 text-slate-600 text-sm lg:text-lg align-middle transition duration-150"
-            onClick={handleOpen}
+            onClick={handleNonTechOpen}
           >
             MORE?
           </button>
@@ -81,14 +133,14 @@ export default function About() {
           businesses operate.
         </h1>
 
-        {isOpen && (
+        {nonTechOpen && (
           <Modal
-            isOpen={isOpen}
-            onClose={handleClose}
+            isOpen={nonTechOpen}
+            onClose={handleNonTechClose}
             children={
               <div>
                 <h1 className="text-slate-600 mb-2 text-sm sm:text-lg leading-relaxed">
-                  PAST EXPERIENCE IN:
+                  Some non-tech things I've done:
                 </h1>
                 <Inline
                   text={
