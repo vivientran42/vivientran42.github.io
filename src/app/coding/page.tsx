@@ -1,3 +1,5 @@
+"use client";
+
 import Skill from "@/components/skill";
 import Project from "@/components/project";
 import { Tangerine } from "next/font/google";
@@ -8,21 +10,21 @@ const parissienne = Parisienne({ weight: ["400"], subsets: ["latin"] });
 
 export default function About() {
   return (
-    <main className="flex min-h-screen flex-col items-start px-36 py-16 bg-stone-50">
+    <main className="flex min-h-screen flex-col items-start px-20 md:px-36 py-16 bg-stone-50">
       <h1
         className={`${tangerine.className} text-left text-4xl sm:text-5xl text-slate-600 object-bottom	`}
       >
         {" "}
         <span className="relative">
           <span
-            className={`${parissienne.className} text-left text-[25px] sm:text-[38px] text-slate-600`}
+            className={`${parissienne.className} text-left text-[25px] sm:text-[35px] text-slate-600`}
           >
             F
           </span>
         </span>
         amiliar with:
       </h1>
-      <div className="flex w-full justify-between items-center">
+      <div className="lg:flex grid grid-cols-2 w-full justify-between items-center">
         <Skill colour="bg-red-300" text="Golang" />
         <Skill colour="bg-orange-300" text="gRPC" />
         <Skill colour="bg-yellow-300" text="React" />
@@ -33,12 +35,20 @@ export default function About() {
       </div>
       <br></br>
       <br></br>
-      <h1 className="text-slate-600 text-4xl leading-relaxed mb-4">Projects</h1>
-      <div className="w-full grid grid-cols-3 gap-4">
+      <h1 className="text-slate-600 text-2xl sm:text-4xl leading-relaxed mb-4">
+        Projects
+      </h1>
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <Project
           heading="YOU ARE RICH"
           description="A digital journalling Chrome extension."
-          footnote="VITE, TAILWIND CSS"
+          footnote="VITE, INDEXEDB"
+          onClick={() =>
+            window.open(
+              "https://github.com/vivientran42/you-are-rich",
+              "_blank",
+            )
+          }
         />
       </div>
     </main>
