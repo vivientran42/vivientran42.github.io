@@ -24,7 +24,7 @@ export default function About() {
         <link rel="preload" href="/book.jpeg" as="image" />
         <link rel="preload" href="/spotify.jpeg" as="image" />
       </Head>
-      <div className="flex min-h-screen flex-col items-start px-16 lg:px-36 py-16 mb-12 bg-stone-50">
+      <div className="flex min-h-screen flex-col items-start px-16 lg:px-40 py-16 mb-12 bg-stone-50">
         <Inline
           text={
             <h1 className="text-slate-600 mb-2 md:mb-4 text-xl sm:text-2xl sm:text-2xl lg:text-3xl leading-relaxed">
@@ -140,7 +140,7 @@ export default function About() {
             children={
               <div>
                 <h1 className="text-slate-600 mb-2 text-sm sm:text-lg leading-relaxed">
-                  Some non-tech things I've done:
+                  Non-techical experience in:
                 </h1>
                 <Inline
                   text={

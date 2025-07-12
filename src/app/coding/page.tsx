@@ -10,7 +10,7 @@ const parissienne = Parisienne({ weight: ["400"], subsets: ["latin"] });
 
 export default function About() {
   return (
-    <main className="flex min-h-screen flex-col items-start px-20 md:px-36 py-16 bg-stone-50">
+    <main className="flex min-h-screen flex-col items-start px-20 md:px-40 py-16 bg-stone-50">
       <h1
         className={`${tangerine.className} text-left text-4xl sm:text-5xl text-slate-600 object-bottom	`}
       >
