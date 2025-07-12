@@ -83,8 +83,8 @@ export default function About() {
               children={
                 <div>
                   <h1 className="text-slate-600 mb-2 text-sm sm:text-lg leading-relaxed">
-                    Working in a primarily backend team with the occasional
-                    frontend task.
+                    In a primarily backend team with occasional
+                    frontend work.
                   </h1>
                   <Inline
                     text={
