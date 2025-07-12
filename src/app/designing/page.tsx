@@ -31,7 +31,7 @@ export default function About() {
       <br></br>
       <h1 className="text-slate-600 text-4xl leading-relaxed mb-4">Projects</h1>
       <div className="w-full grid grid-cols-3 gap-4">
-        <Project
+        {/* <Project
           heading="GALLIVANTING AROUND & AROUND EUROPE"
           description="Encapsulating my first trip to Europe."
           footnote="ZINE"
@@ -40,7 +40,7 @@ export default function About() {
           heading="LOT'S WIFE"
           description="Designing Monash University's student magazine."
           footnote="BRANDING, PUBLICATION"
-        />
+        /> */}
       </div>
     </main>
   );
