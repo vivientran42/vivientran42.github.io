@@ -25,7 +25,7 @@ export default function About() {
         amiliar with:
       </h1>
       <div className="lg:flex grid grid-cols-2 w-full justify-between items-center">
-        <Skill colour="bg-red-300" text="Golang" />
+        <Skill colour="bg-red-300" text="Go" />
         <Skill colour="bg-orange-300" text="gRPC" />
         <Skill colour="bg-yellow-300" text="React" />
         <Skill colour="bg-green-300" text="Next.js" />
